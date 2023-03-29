@@ -16,20 +16,22 @@ APNSItemPushType APNSItemPushTypeDefault(void) {
 }
 
 NSString *APNSItemPushTypeToStr(APNSItemPushType pushType) {
-  switch (pushType) {
-    case APNSItemPushTypeAlert:
-      return @"alert"; //0
-    case APNSItemPushTypeBackground:
-      return @"background"; //1
-    case APNSItemPushTypeVoip:
-      return @"voip"; //2
-    case APNSItemPushTypeComplication:
-      return @"complication"; //3
-    case APNSItemPushTypeFileProvider:
-      return @"fileprovider"; //4
-    case APNSItemPushTypeMDM:
-      return @"mdm"; //5
-  }
+    switch (pushType) {
+        case APNSItemPushTypeAlert:
+            return @"alert"; //0
+        case APNSItemPushTypeBackground:
+            return @"background"; //1
+        case APNSItemPushTypeVoip:
+            return @"voip"; //2
+        case APNSItemPushTypeComplication:
+            return @"complication"; //3
+        case APNSItemPushTypeFileProvider:
+            return @"fileprovider"; //4
+        case APNSItemPushTypeMDM:
+            return @"mdm"; //5
+        case APNSItemPushTypePushToTalk:
+            return @"pushtotalk";
+    }
 }
 
 APNSItemPushType APNSItemPushTypeFromStr(NSString *pushTypeStr) {
@@ -51,6 +53,9 @@ APNSItemPushType APNSItemPushTypeFromStr(NSString *pushTypeStr) {
   else if ([pushTypeStr isEqualToString:APNSItemPushTypeToStr(APNSItemPushTypeMDM)]) {
     return APNSItemPushTypeMDM;
   }
+  else if ([pushTypeStr isEqualToString:APNSItemPushTypeToStr(APNSItemPushTypePushToTalk)]) {
+    return APNSItemPushTypePushToTalk;
+  }
   else {
     return APNSItemPushTypeDefault();
   }
@@ -64,5 +69,6 @@ NSArray<NSString *> *APNSItemPushTypesAll(void) {
     APNSItemPushTypeToStr(APNSItemPushTypeComplication),
     APNSItemPushTypeToStr(APNSItemPushTypeFileProvider),
     APNSItemPushTypeToStr(APNSItemPushTypeMDM),
+    APNSItemPushTypeToStr(APNSItemPushTypePushToTalk),
   ];
 }
