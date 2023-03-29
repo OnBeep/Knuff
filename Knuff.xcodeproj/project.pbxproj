@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F402B938202B9D6200E3F6A4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F402B936202B9D6200E3F6A4 /* Crashlytics.framework */; };
-		F402B939202B9D6200E3F6A4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F402B937202B9D6200E3F6A4 /* Fabric.framework */; };
 		F4069AF01AB47A60008E79D8 /* APNSItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F4069AEF1AB47A60008E79D8 /* APNSItem.m */; };
 		F4069AF61AB589A1008E79D8 /* APNSDevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4069AF51AB589A1008E79D8 /* APNSDevicesViewController.m */; };
 		F4069AF91AB59F36008E79D8 /* APNSDeviceTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4069AF81AB59F36008E79D8 /* APNSDeviceTableCellView.m */; };
@@ -155,9 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42CC4B51C565BEB00F10549 /* Sparkle.framework in Frameworks */,
-				F402B939202B9D6200E3F6A4 /* Fabric.framework in Frameworks */,
 				F46BF9031C148A8F003ED597 /* Fragaria.framework in Frameworks */,
-				F402B938202B9D6200E3F6A4 /* Crashlytics.framework in Frameworks */,
 				FECFE5744DC13647DFE19EEC /* Pods_Knuff.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
